@@ -1,0 +1,304 @@
+/* Styles de la barre de navigation */
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo img {
+  height: 60px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: blue;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-btn {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.navbar-btn:hover {
+  background-color: blue;
+}
+
+/* Section Hero */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-button {
+  padding: 0.8rem 1.5rem;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: blue;
+}
+
+/* Grille des produits */
+.product-page {
+  text-align: center;
+  padding: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+/* Page de connexion */
+.login-page {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-page h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.login-page p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #010100; /* Orange pour correspondre au style */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #1700e6;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.separator span {
+  margin: 0 1rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+}
+
+.social-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #eee;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #ddd;
+}
+
+.social-button.apple {
+  font-family: sans-serif;
+}
+
+.social-button.facebook {
+  color: #1877f2; /* Bleu Facebook */
+}
+
+.social-button.google {
+  color: #db4437; /* Rouge Google */
+}
+
+.cookie-link {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.cookie-link:hover {
+  text-decoration: underline;
+}
+/* Message d'erreur */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+/* Conteneur principal des produits */
+.product-page {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Liste des produits */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Utilisation de Grid pour une disposition responsive */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Élément de chaque produit */
+.product-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+/* Image du produit */
+.product-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover; /* Pour éviter la déformation de l'image */
+  border-radius: 8px;
+}
+
+/* Titre du produit */
+.product-item h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Description du produit */
+.product-item p {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* Prix du produit */
+.product-item p:last-child {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
